@@ -22,5 +22,11 @@ int main(){
     cout << q << endl; // address of X
     cout << *q << endl; // value of x
 
+    *p = 5; // value assigned operator
+
+    cout << *p << endl;
+    cout << *q << endl; // new value of q which is X
+    cout << x << endl; // new value of x
+
     return 0;
 }
