@@ -10,8 +10,8 @@ using namespace std;
  * @param str2 
  */
 void concatenate(char *str1, char *str2){
-    while(*++str1);
-    while(*str2){
+    while(*++str1); // str end here then added to it rest of the str2
+    while(*str2){   // while str2 is not null
         *str1++ = *str2++;
     }
 }

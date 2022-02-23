@@ -12,7 +12,7 @@ void reverseArr(int* arr, int size){
     int *rear_idx = arr + size - 1; // currently at last Index
 
     while(front_idx < rear_idx){
-        swap(front_idx, rear_idx);
+        swap(front_idx, rear_idx); // swaping the first and last index element
         front_idx++;
         rear_idx--;
     } 

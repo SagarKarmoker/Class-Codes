@@ -5,7 +5,7 @@ using namespace std;
 bool compare(char *str1, char *str2){
     bool flag;
     while (*str1 && *str2){
-        if (*str1++ = *str2++){
+        if (*str1++ == *str2++){
             flag = true;
         }
         else{
@@ -38,7 +38,7 @@ int main(){
     cin >> str2;
 
     bool ans = compare(ptr1,ptr2);
-    cout << ans;
+    cout << ans; // 0 = false, 1 = true
     
     return 0;
 }
