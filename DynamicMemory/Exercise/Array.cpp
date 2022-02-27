@@ -12,5 +12,7 @@ int main(){
         cout << *(arr + i) << " ";
     }
 
+    delete arr;
+
     return 0;
 }
