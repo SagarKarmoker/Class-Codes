@@ -13,11 +13,11 @@ int main(){
         if(*(ptr++) == key){
             idx = i;
         }else{
-            idx = 0;
+            idx = -1;
         }
     }
 
-    if (idx > 0)
+    if (idx >= 0)
     {
         cout << "found at " << idx << endl;
     }

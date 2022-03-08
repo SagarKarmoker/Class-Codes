@@ -8,6 +8,9 @@
         "tuple": "cpp",
         "utility": "cpp",
         "xstring": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "istream": "cpp",
+        "type_traits": "cpp",
+        "xlocnum": "cpp"
     }
 }
