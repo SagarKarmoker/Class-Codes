@@ -104,6 +104,40 @@ public:
         }
     }
 
-    
+    Node<T>* delete(Node<T>* root,T key){
+        if(root == NULL){
+            return NULL;
+        }
+        // finding the key element
+        if(key > root->data){
+            root->right = delete(root->right, key);
+        }
+        else if(key < root->data){
+            root->left = delete(root->left, key);
+        }
+        else{
+            //case 3
+            // when node have 2 child
+            if(root->left != NULL && root->right != NULL){
+                T left_max = max(root->left);
+                root->data = left_max;
+                root->left = delete(root->left, left_max);
+                return root;
+            }
+            // when left child is present
+            else if(root->left != NULL){
+                return root->left;
+            }
+            // when right child is present
+            else if(root->right != NULL){
+                return root->right;
+            }
+            else{
+                return NULL;
+            }
+        }
+
+        return root;
+    }
 
 };

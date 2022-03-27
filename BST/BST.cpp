@@ -25,5 +25,7 @@ int main(){
     // cout << bst->max(bst->root) << endl;
 
     cout << bst->findMin() << endl;
+
+    
     return 0;
 }
