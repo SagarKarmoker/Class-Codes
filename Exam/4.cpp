@@ -73,26 +73,6 @@ int main(){
 
     int input;
     
-    /* do
-    {
-        for(int i = 0; i < 5; i++){
-            q->dequeue();
-        }
-    } while (input < 0); */
-/* 
-    while(input > 0){
-        if(input < 0){
-            for (int i = 0; i < 5; i++)
-            {
-                q->dequeue();
-            }
-        }
-        else{
-            q->enqueue(input);
-        }
-        cin >> input;
-    } */
-
     // using Queue Data strucutre
 
     cin >> input;
