@@ -80,6 +80,16 @@ public:
         }
     }
 
+    // or find maximum 
+    int max(Node<T>* root){
+        if(root->right != NULL){
+            return max(root->right);
+        }
+        else{
+            return root->data;
+        }
+    }
+
     int findMin(){
         if(root == NULL){
             return 0;
@@ -94,5 +104,6 @@ public:
         }
     }
 
+    
 
 };

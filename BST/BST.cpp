@@ -22,6 +22,7 @@ int main(){
     cout << bst->search(20) << endl; // 1=true and 0= false
 
     cout << bst->findMax() << endl;
+    // cout << bst->max(bst->root) << endl;
 
     cout << bst->findMin() << endl;
     return 0;
