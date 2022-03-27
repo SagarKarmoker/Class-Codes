@@ -20,19 +20,6 @@ public:
         return root;
     }
 
-    Node<T>* add(Node* root, T data){
-        if(root == NULL){
-            root = new Node(data);
-        }
-        else if(data < root->data){
-            root->left = add(root->left, data);
-        }
-        else{
-            root->right = add(root->right, data);
-        }
-        return root;
-    }
-
     void preorder(Node<T>* root){
         if(root != NULL){
             cout << root->data << "->";
@@ -59,5 +46,53 @@ public:
         }
         // cout << endl;
     }
+
+    bool search(T key){
+        Node<T>* temp = root;
+        bool flag = false;
+        
+        while(temp != NULL){
+            if(temp->data == key){
+                flag = true;
+                break;
+            }
+            else if(key < temp->data){
+                temp = temp->left;
+            }
+            else{
+                temp = temp->right;
+            }
+        }
+
+        return flag;
+    }
+
+    int findMax(){
+        if(root == NULL){
+            return 0;
+        }
+        else{
+            Node<T>* temp = root;
+            while(temp->right != NULL){
+                temp = temp->right;
+            }
+            return temp->data;
+        }
+    }
+
+    int findMin(){
+        if(root == NULL){
+            return 0;
+        }
+        else{
+            Node<T>* temp = root;
+            while(temp->left != NULL){
+                temp = temp->left;
+            }
+
+            return temp->data;
+        }
+    }
+
 
 };
