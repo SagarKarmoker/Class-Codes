@@ -104,16 +104,16 @@ public:
         }
     }
 
-    Node<T>* delete(Node<T>* root,T key){
+    Node<T>* remove(Node<T>* root,T key){
         if(root == NULL){
             return NULL;
         }
         // finding the key element
         if(key > root->data){
-            root->right = delete(root->right, key);
+            root->right = remove(root->right, key);
         }
         else if(key < root->data){
-            root->left = delete(root->left, key);
+            root->left = remove(root->left, key);
         }
         else{
             //case 3
@@ -121,7 +121,7 @@ public:
             if(root->left != NULL && root->right != NULL){
                 T left_max = max(root->left);
                 root->data = left_max;
-                root->left = delete(root->left, left_max);
+                root->left = remove(root->left, left_max);
                 return root;
             }
             // when left child is present

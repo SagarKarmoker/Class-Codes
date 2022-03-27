@@ -26,6 +26,10 @@ int main(){
 
     cout << bst->findMin() << endl;
 
+    bst->remove(bst->root, 1);
+
+    bst->preorder(bst->root);
+    cout << endl;
     
     return 0;
 }
