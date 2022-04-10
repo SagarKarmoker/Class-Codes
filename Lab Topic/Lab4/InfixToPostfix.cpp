@@ -112,7 +112,8 @@ void infixToPost(string s){
     cout << post;
 }
 int main(){
-    string s = "({a+(b*c)}-d)";
+    // string s = "({a+(b*c)}-d)";
+    string s = "(a+b)*c/(d-e)";
 
     // string s = "(a-b/c)*(a/k-l)"; // abc/-ak/l-*
     infixToPost(s);
