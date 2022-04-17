@@ -44,6 +44,8 @@
         "xstddef": "cpp",
         "xtr1common": "cpp",
         "deque": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "queue": "cpp",
+        "vector": "cpp"
     }
 }

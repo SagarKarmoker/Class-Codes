@@ -94,8 +94,7 @@ public:
         NodeDLL *newNode = new NodeDLL(d);
         newNode->sll = s->head;
         
-        if(head == NULL){3
-        
+        if(head == NULL){
             head = newNode;
             return;
         }
