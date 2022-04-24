@@ -113,7 +113,7 @@ public:
         }
     }
 
-    int get(int pos){
+    T get(int pos){
         if (head == NULL || pos < 0)
         {
             return 0;

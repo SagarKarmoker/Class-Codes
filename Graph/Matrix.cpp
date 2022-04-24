@@ -23,6 +23,7 @@ int main(){
         cout << "(u,v) = ";
         cin>> u >> v;
         mat[u][v] = 1;
+        mat[v][u] = 1;
     }
 
     for(int i = 1; i < 5; i++){ 

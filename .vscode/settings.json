@@ -46,6 +46,8 @@
         "deque": "cpp",
         "stack": "cpp",
         "queue": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "algorithm": "cpp",
+        "sstream": "cpp"
     }
 }
